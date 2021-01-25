@@ -7,8 +7,14 @@ public class Chocolate extends Sweets {
 
     public Chocolate(int sweetweight, int sweetCost) {
 
-
         super(sweetweight, sweetCost);
+    }
+
+    public Chocolate(int sweetweight, int sweetCost, TypeChocolate typeChocolate) {
+
+        this.typeChocolate = typeChocolate;
+        this.sweetCost = sweetCost;
+        this.sweetweight = sweetweight;
     }
 
     @Override
@@ -21,12 +27,6 @@ public class Chocolate extends Sweets {
         return sweetweight;
     }
 
-    public Chocolate(int sweetweight, int sweetCost, TypeChocolate typeChocolate) {
-
-        this.typeChocolate = typeChocolate;
-        this.sweetCost = sweetCost;
-        this.sweetweight = sweetweight;
-    }
 
     @Override
     public String toString() {

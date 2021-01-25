@@ -9,7 +9,7 @@ import java.util.Collections;
 public class Box implements BoxInterface {
 
     private int boxWeight = 0;
-
+    private int boxCost = 0;
     @Override
     public String toString() {
         return "Box{" +
@@ -18,7 +18,7 @@ public class Box implements BoxInterface {
                 '}';
     }
 
-    private int boxCost = 0;
+
 
     private ArrayList<Sweets> container = new ArrayList<>();
 
