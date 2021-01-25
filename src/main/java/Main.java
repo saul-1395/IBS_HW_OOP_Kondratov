@@ -14,24 +14,17 @@ public class Main {
         box.addSweet(chocolate);
         box.addSweet(chocolate2);
         box.addSweet(chocolate3);
-
         box.addSweet(pudding);
         box.addSweet(pudding1);
 
-        box.getInfo();
-
+        box.getInfo(); //выводим информацию о сладостях в коробке
         System.out.println();
-
-        System.out.println(box.getBoxCost() + "  " + box.getBoxWeight());
-
-        System.out.println(box.toString());
-
-        box.optimizeBox(TypeOptimize.COST, 50);
+        System.out.println(box.toString()); //информацию о весе и стоимости коробки
+        System.out.println("optimisation");
+        box.optimizeBox(TypeOptimize.COST, 50); //оптимизируем коробку по стоимости
        // box.optimizeBox(TypeOptimize.WEIGHT, 35);
-
-        System.out.println(box.getBoxCost() + "  " + box.getBoxWeight());
-
-        box.getInfo();
+        System.out.println(box.toString());  //информацию о весе и стоимости коробки после оптимизации
+        box.getInfo(); //содержимое после оптимизации
 
 
     }
