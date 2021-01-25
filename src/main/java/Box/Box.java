@@ -73,9 +73,11 @@ public class Box implements BoxInterface {
 
     @Override
     public void getInfo() {
+        System.out.println(this.toString());
         for (Sweets sweets : container) {
             System.out.println(sweets.toString());
         }
+
     }
 
     private void summCostWeight(int weight, int cost) {
